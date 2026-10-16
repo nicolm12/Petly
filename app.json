@@ -34,7 +34,8 @@
         {
           "motionPermission": "Peludito mide tu movimiento durante los paseos."
         }
-      ]
+      ],
+      "expo-font"
     ],
     "extra": {
       "eas": {
