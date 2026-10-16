@@ -3,15 +3,43 @@
     "name": "Petly",
     "slug": "petly",
     "orientation": "portrait",
-    "ios": { "supportsTablet": true, "bundleIdentifier": "com.tuusuario.peludito" },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tuusuario.peludito"
+    },
     "android": {
       "package": "com.tuusuario.peludito",
-      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "plugins": [
-      ["expo-image-picker", { "cameraPermission": "Peludito usa la cámara para tomarle fotos a tu mascota." }],
-      ["expo-location", { "locationWhenInUsePermission": "Peludito guarda dónde fue la visita al veterinario." }],
-      ["expo-sensors", { "motionPermission": "Peludito mide tu movimiento durante los paseos." }]
-    ]
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Peludito usa la cámara para tomarle fotos a tu mascota."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Peludito guarda dónde fue la visita al veterinario."
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Peludito mide tu movimiento durante los paseos."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "04bb16d5-4d2c-497f-822b-d4c1f6c086e2"
+      }
+    }
   }
 }
