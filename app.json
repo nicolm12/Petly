@@ -1,25 +1,17 @@
 {
   "expo": {
-    "name": "VetCare",
-    "slug": "VetCare",
-    "version": "1.0.0",
+    "name": "Petly",
+    "slug": "petly",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.tuusuario.peludito" },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
+      "package": "com.tuusuario.peludito",
+      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      ["expo-image-picker", { "cameraPermission": "Peludito usa la cámara para tomarle fotos a tu mascota." }],
+      ["expo-location", { "locationWhenInUsePermission": "Peludito guarda dónde fue la visita al veterinario." }],
+      ["expo-sensors", { "motionPermission": "Peludito mide tu movimiento durante los paseos." }]
+    ]
   }
 }
